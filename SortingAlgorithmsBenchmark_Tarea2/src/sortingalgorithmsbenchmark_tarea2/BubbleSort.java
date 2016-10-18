@@ -17,18 +17,20 @@ public class BubbleSort {
         array=pDato;
         BubbleSortM();
     }
+    
+    /**
+     * Metodo encargado de ordenar la lista que recibe la clase BubbleSort
+     */
     public void BubbleSortM(){
         boolean bandera=true;
         int cont=0;
         int tmp=0;
         while (true){
             if (cont==array.length-1){
-                System.out.println("Aqui2");
                 if(bandera==false){
                     cont=0;
                     bandera=true;
                 }else{
-                    System.out.println("break");
                     break;
                 }
             }else{
@@ -37,7 +39,6 @@ public class BubbleSort {
                   array[cont+1]=array[cont];
                   array[cont]=tmp;
                   bandera=false;
-                  System.out.println("cambio");
                   cont+=1;
                 }else{
                     cont+=1;
@@ -46,6 +47,10 @@ public class BubbleSort {
         
         }
     }
+    
+    /**
+     * Metodo que imprime el atributo array de la clase
+     */
      
       public void paint(){
         for (int i=0;i<array.length;i++){

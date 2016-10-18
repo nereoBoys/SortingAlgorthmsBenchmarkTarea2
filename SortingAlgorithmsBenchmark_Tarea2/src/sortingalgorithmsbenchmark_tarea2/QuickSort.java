@@ -18,6 +18,12 @@ public class QuickSort {
         QuickSortM(array,0,array.length-1);
     }
     
+    /**
+     * etodo encargado de ordenar la lista que recibe la clase QuickSort
+     * @param array
+     * @param izq que es igual a 0 para el inicio del algoritmo
+     * @param der que es igual al tamaño del array menos 1
+     */
     
      public void QuickSortM(int array[], int izq, int der) {
 
@@ -43,6 +49,9 @@ public class QuickSort {
             QuickSortM(array,j+1,der); // ordenamos subarray derecho
     }
      
+     /**
+      * Metodo que imprime el atributo array de la clase
+      */
       public void paint(){
         for (int i=0;i<array.length;i++){
             System.out.println(array[i]);

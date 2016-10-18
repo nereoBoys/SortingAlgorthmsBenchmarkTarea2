@@ -18,6 +18,9 @@ public class InsertionSort {
         InsertionSortM();
     }
     
+    /**
+     * Metodo encargado de ordenar la lista que recibe la clase InsertionSort
+     */
     public void InsertionSortM() {
       for (int i=1; i < array.length; i++) {
          int aux = array[i];
@@ -29,6 +32,9 @@ public class InsertionSort {
       }
    }
     
+    /**
+     * Metodo que imprime el atributo array de la clase
+     */
      public void paint(){
         for (int i=0;i<array.length;i++){
             System.out.println(array[i]);

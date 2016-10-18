@@ -18,6 +18,12 @@ public class MergeSort {
         MergeSortM(array,0,array.length-1);
     }
     
+    /**
+     * Metodo encargado de ordenar la lista que recibe la clase MergeSort
+     * @param array
+     * @param izq que es igual a 0 para el inicio del algoritmo
+     * @param der que es igual al tamaño del array menos 1
+     */
     public void MergeSortM(int array[],int izq, int der){
         if (izq<der){
             int m=(izq+der)/2;
@@ -26,7 +32,13 @@ public class MergeSort {
             Merge(array,m,izq, der);
     }
 }
- 
+ /**
+  * Este es un metodo auxiliar empleado por el metodo MergeSortM
+  * @param array
+  * @param m  el cual es igual izq+der dividido entre 2
+  * @param izq
+  * @param der 
+  */
   public void Merge(int[] array,int m,int izq, int der){
    int i, j, k;
    int [] B = new int[array.length]; //array auxiliar
@@ -43,6 +55,9 @@ public class MergeSort {
                            array[k++]=B[i++]; //primera mitad (si los hay)
  }
   
+  /**
+   * Metodo que imprime el atributo array de la clase
+   */
   
    public void paint(){
         for (int i=0;i<array.length;i++){

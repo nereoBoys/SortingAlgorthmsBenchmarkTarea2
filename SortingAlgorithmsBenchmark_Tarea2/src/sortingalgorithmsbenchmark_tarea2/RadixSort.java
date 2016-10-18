@@ -18,6 +18,9 @@ public class RadixSort {
         RadixSortM();
     }
     
+    /**
+     * Metodo encargado de ordenar la lista que recibe la clase RadixSort
+     */
     
     public void RadixSortM()
     {
@@ -43,6 +46,9 @@ public class RadixSort {
 
     } 
     
+    /**
+     * Metodo que imprime el atributo array de la clase RadixSort
+     */
      public void paint(){
         for (int i=0;i<array.length;i++){
             System.out.println(array[i]);

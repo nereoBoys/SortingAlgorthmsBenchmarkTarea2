@@ -17,6 +17,10 @@ public class SelectionSort {
         array=pDato;
         SelectionSortM();
     }
+    
+    /**
+     * Metodo encargado de ordenar la lista que recibe la clase SelectionSort
+     */
     public void SelectionSortM() {
           int i, j, menor, pos, tmp;
           for (i = 0; i < array.length - 1; i++) { // tomamos como menor el primero
@@ -35,7 +39,9 @@ public class SelectionSort {
                 }
           }
 }
-    
+    /**
+     * Metodo que imprime el atributo array de la clase SelectionSort
+     */
      public void paint(){
         for (int i=0;i<array.length;i++){
             System.out.println(array[i]);

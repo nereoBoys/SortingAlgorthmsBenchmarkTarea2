@@ -13,10 +13,15 @@ public class ShellSort {
     
     private int [] array;
     
+    
     public ShellSort(int[] pDato){
         array=pDato;
         ShellSortM();
     }
+    
+    /**
+     *Metodo encargado de ordenar la lista que recibe la clase ShellSort 
+     */
     
     public void ShellSortM() {
     for ( int increment = array.length / 2;increment > 0;
@@ -30,7 +35,9 @@ public class ShellSort {
         }
     }
 }
-    
+    /**
+     * Metodo que imprime el atributo array de la clase ShellSort
+     */
      public void paint(){
         for (int i=0;i<array.length;i++){
             System.out.println(array[i]);
