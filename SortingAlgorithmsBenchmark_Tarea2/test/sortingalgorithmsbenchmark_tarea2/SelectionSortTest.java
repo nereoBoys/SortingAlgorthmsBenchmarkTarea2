@@ -5,6 +5,8 @@
  */
 package sortingalgorithmsbenchmark_tarea2;
 
+import java.util.Arrays;
+import java.util.Random;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
@@ -14,7 +16,20 @@ import static org.junit.Assert.*;
  */
 public class SelectionSortTest {
     
+    int[] array = new int[1000];
+    
     public SelectionSortTest() {
+        Random rnd = new Random();
+        //int num = (rnd.nextInt(1001));
+        //int num = 1;
+        int num = 1000;
+        for(int index=0;index<1000;index++){
+            array[index] = num;
+            //num++;
+            num=num-1;
+            //num = (rnd.nextInt(1001));           
+        }  
+        System.out.println("Arreglo original: "+Arrays.toString(array));
     }
 
     /**
@@ -22,25 +37,10 @@ public class SelectionSortTest {
      */
     @Test
     public void testSelectionSortM() {
-        System.out.println("SelectionSortM");
-        int[] array ={4,6,102,1,5,74,28,12,11,7};
+        System.out.println("SelectionSort aplicado");
         SelectionSort instance = new SelectionSort(array);
-        instance.SelectionSortM();
-        // TODO review the generated test code and remove the default call to fail.
-        //fail("The test case is a prototype.");
+        //instance.paint();
     }
 
-    /**
-     * Test of paint method, of class SelectionSort.
-     */
-    @Test
-    public void testPaint() {
-        System.out.println("paint");
-        int[] array ={4,6,102,1,5,74,28,12,11,7};
-        SelectionSort instance = new SelectionSort(array);
-        instance.paint();
-        // TODO review the generated test code and remove the default call to fail.
-        //fail("The test case is a prototype.");
-    }
     
 }
