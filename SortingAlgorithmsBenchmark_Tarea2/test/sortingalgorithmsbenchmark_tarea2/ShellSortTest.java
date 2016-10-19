@@ -39,7 +39,7 @@ public class ShellSortTest {
     public void testShellSortM() {
         System.out.println("ShellSort aplicado");
         ShellSort instance = new ShellSort(array);
-        instance.paint();
+        //instance.paint();
         
     }
 }
